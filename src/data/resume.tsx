@@ -1,29 +1,31 @@
 import { Icons } from "@/components/icons";
+import { url } from "inspector";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Amila Wijesinghe",
   initials: "EG",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "Fullstack Developer",
+  location: "Ginigathena, Sri Lanka",
+  locationLink:
+    "https://www.google.com/maps/place/Ginigathena,+Sri+Lanka/@6.973679,80.3996583,12z/data=!3m1!4b1!4m6!3m5!1s0x3ae2f8a7c9e0d5b7:0x4f2a8c8e8c8e8c8e!8m2!3d6.973679!4d80.3996583!16s%2Fg%2F11b6g6g6g",
+  description: "Fullstack Developer",
   summary:
     "I'm a passionate software developer with a strong interest in building scalable and efficient applications.I'm always looking for new challenges and opportunities to learn and grow.When I'm not coding, you can find me exploring new places, trying out new foods, or reading a good book.I'm a firm believer in the importance of work-life balance and strive to maintain a healthy balance between my professional and personal life.",
   avatarUrl: "/my.jpg",
   skills: [
     "React",
-    "Next.js",
-    "Typescript",
     "Node.js",
     "Python",
     "Java",
-    "C++",
+    "SQL",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "MongoDB",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "amilasampathas97@gmail.com",
     tel: "0767505006",
@@ -49,10 +51,15 @@ export const DATA = {
 
         navbar: true,
       },
+      Whatsapp: {
+        name: "Whatsapp",
+        url: "https://wa.me/+94767505006",
+        icon: Icons.whatsapp,
+      },
 
       email: {
-        name: "Send Email",
-        url: "#",
+        name: "amilasampathas97@gmail.com",
+        url: "amilasampathas97@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -151,20 +158,35 @@ export const DATA = {
       start: "2007",
       end: "2016",
     },
-    
   ],
   projects: [
     {
+      title: "Shop.co",
+      href: "https://shop-co-iota-livid.vercel.app/",
+      dates: "2025",
+      active: true,
+      description:
+        "This is a fully functional e-commerce website developed using the MERN stack. The platform enables users to browse products, add items to a cart, place orders, while administrators can manage products, orders, and users. The application is designed to provide a seamless shopping experience with a responsive UI and secure backend.",
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/amila-wije/Shop.co",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "web.mp4",
+    },
+
+    {
       title: "Smart PLUG Base",
-      href: "https://chatcollect.com",
+      href: "https://github.com/amila-wije/smart-plugbase",
       dates: "2024",
       active: true,
       description:
         "About a versatile solution for energy monitoring, remote control, automation, and theft protection. Built with Arduino and Android Studio, it supports smart home integration, serving electric vehicle owners, farmers, and industries efficiently.",
-      technologies: [
-        "Java",
-        "Android Studio",
-      ],
+      technologies: ["Java", "Android Studio"],
       links: [
         {
           type: "Source",
@@ -173,14 +195,8 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "smart.mp4",
+      video: "smart.mp4",
     },
-   
   ],
-  hackathons: [
-    
-  ],
-
-  
+  hackathons: [],
 } as const;

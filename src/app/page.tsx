@@ -13,13 +13,50 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   const slugs = [
-    "python", "javascript", "java", "react", "html5","java",, "nextjs", "github",
-     "visualstudiocode", "androidstudio","python", "javascript", "java", "react", "html5","java",, "nextjs", "github",
-     "visualstudiocode", "androidstudio","python", "javascript", "java", "react", "html5","java",, "nextjs", "github",
-     "visualstudiocode", "androidstudio",
+    "python",
+    "javascript",
+    "java",
+    "react",
+    "html5",
+    "java",
+    ,
+    "nextjs",
+    "github",
+    "visualstudiocode",
+    "androidstudio",
+    "python",
+    "javascript",
+    "java",
+    "react",
+    "html5",
+    "java",
+    "MongoDB",
+    "tailwindcss",
+    ,
+    "nextjs",
+    "github",
+    "visualstudiocode",
+    "androidstudio",
+    "python",
+    "javascript",
+    "java",
+    "react",
+    "html5",
+    "java",
+    "MongoDB",
+    "tailwindcss",
+    ,
+    "nextjs",
+    "github",
+    "visualstudiocode",
+    "androidstudio",
+    "MongoDB",
+    "tailwindcss",
   ];
-  
-  const images = slugs.map(slug => `https://cdn.simpleicons.org/${slug}/${slug}`);
+
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  );
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
@@ -48,7 +85,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      
+
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
@@ -59,14 +96,17 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      
+
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
-            <BlurFade key={education.school} delay={BLUR_FADE_DELAY * 8 + id * 0.05}>
+            <BlurFade
+              key={education.school}
+              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+            >
               <ResumeCard
                 href={education.href}
                 logoUrl={education.logoUrl}
@@ -79,7 +119,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      
+
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -94,7 +134,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -106,7 +146,10 @@ export default function Page() {
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
             {DATA.projects.map((project, id) => (
-              <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
                 <ProjectCard
                   href={project.href}
                   title={project.title}
@@ -121,18 +164,20 @@ export default function Page() {
             ))}
           </div>
         </div>
-       
       </section>
       <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 100}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-6xl">
-                Work on
-              </h2>
-            </div>
-          </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 100}>
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-6xl">
+              Work on
+            </h2>
           </div>
-      <section id="icon-cloud" className="flex items-center justify-center py-12">
+        </BlurFade>
+      </div>
+      <section
+        id="icon-cloud"
+        className="flex items-center justify-center py-12"
+      >
         <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg ">
           <IconCloud images={images} />
         </div>
@@ -149,12 +194,12 @@ export default function Page() {
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
+                <a
+                  href="https://wa.me/+94767505006"
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
-                </Link>{" "}
+                  with a direct question on Whatsapp
+                </a>
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.
               </p>
