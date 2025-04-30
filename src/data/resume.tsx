@@ -55,6 +55,7 @@ export const DATA = {
         name: "Whatsapp",
         url: "https://wa.me/+94767505006",
         icon: Icons.whatsapp,
+        navbar: false,
       },
 
       email: {
