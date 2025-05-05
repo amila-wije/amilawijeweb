@@ -181,6 +181,25 @@ export const DATA = {
     },
 
     {
+      title: "Age Calculator",
+      href: "https://age-cal-lovat.vercel.app/",
+      dates: "2025",
+      active: true,
+      description:
+        "This is a Age calculator developed using the MERN stack. The platform enables users to select their Birthdate.",
+      technologies: [, "React", " JavaScript", "HTML", " Tailwind CSS", "CSS"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/amila-wije/AgeCAL.git",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "web1.mp4",
+    },
+
+    {
       title: "Smart PLUG Base",
       href: "https://github.com/amila-wije/smart-plugbase",
       dates: "2024",
