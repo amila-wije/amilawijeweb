@@ -187,7 +187,7 @@ export const DATA = {
       active: true,
       description:
         "This is a Age calculator developed using the MERN stack. The platform enables users to select their Birthdate.",
-      technologies: [, "React", " JavaScript", "HTML", " Tailwind CSS", "CSS"],
+      technologies: ["React", " JavaScript", "HTML", " Tailwind CSS"],
       links: [
         {
           type: "Source",
