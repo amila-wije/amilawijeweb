@@ -186,7 +186,7 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "This is a Age calculator developed using the MERN stack. The platform enables users to select their Birthdate.",
+        "A simple and efficient task management application built using the MERN stack (MongoDB, Express.js, React, Node.js). The app allows users to create, read, update, and delete (CRUD) tasks. The frontend, developed with React and styled using modern UI components, communicates with a Node.js/Express backend API, which handles routing and logic. Task data is stored in a MongoDB database, ensuring persistent and scalable storage.",
       technologies: ["React", " JavaScript", "HTML", " Tailwind CSS"],
       links: [
         {
