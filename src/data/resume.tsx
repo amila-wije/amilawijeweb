@@ -162,6 +162,24 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Movie Explorer",
+      href: "https://movie-explorer-psi-two.vercel.app/",
+      dates: "2025",
+      active: true,
+      description:
+        "MovieExplorer is a React-based web application that allows users to browse movies using the TMDb (The Movie Database) API. It features a horizontal slideshow for trending movies, a search functionality, infinite scrolling for popular or searched movies, dark mode support, and a detailed movie dialog with trailer links. The app is designed to provide an engaging user experience with a focus on performance and responsiveness.",
+      technologies: ["React", "JavaScript", "HTML", "CSS"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/amila-wije/Movie-Explorer.git",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "movie.mp4",
+    },
+    {
       title: "Shop.co",
       href: "https://shop-co-iota-livid.vercel.app/",
       dates: "2025",
