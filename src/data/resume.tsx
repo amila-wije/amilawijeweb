@@ -3,8 +3,8 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Amila Wijesinghe",
-  initials: "EG",
-  url: "https://dillion.io",
+  initials: "AW",
+  url: "",
   location: "Ginigathena, Sri Lanka",
   locationLink:
     "https://www.google.com/maps/place/Ginigathena,+Sri+Lanka/@6.973679,80.3996583,12z/data=!3m1!4b1!4m6!3m5!1s0x3ae2f8a7c9e0d5b7:0x4f2a8c8e8c8e8c8e!8m2!3d6.973679!4d80.3996583!16s%2Fg%2F11b6g6g6g",
@@ -97,7 +97,7 @@ Next.js, integrating Firebase and MongoDB for scalable backend and
 database solutions. Implemented responsive UI components and real-time
 functionalities, while improving performance and user experience.`,
     },
-    
+
   ],
   education: [
     {
