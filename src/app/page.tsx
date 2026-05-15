@@ -88,9 +88,11 @@ export default function Page() {
 
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
+          {/* about text */}
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          {/* about text */}
           <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             <Markdown>
               {DATA.summary}
@@ -100,29 +102,29 @@ export default function Page() {
       </section>
 
       <section id="experience">
-  <div className="flex min-h-0 flex-col gap-y-3">
-    <BlurFade delay={BLUR_FADE_DELAY * 7}>
-      <h2 className="text-xl font-bold">Experience</h2>
-    </BlurFade>
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <h2 className="text-xl font-bold">Experience</h2>
+          </BlurFade>
 
-    {DATA.work.map((exp, id) => (
-      <BlurFade
-        key={exp.company}
-        delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-      >
-        <ResumeCard
-          href={exp.href}
-          logoUrl={exp.logoUrl}
-          subtitle={exp.subtitle}
-          altText={exp.company}
-          title={exp.company}
-          period={`${exp.start} - ${exp.end}`}
-          description={exp.description}
-        />
-      </BlurFade>
-    ))}
-  </div>
-</section>
+          {DATA.work.map((exp, id) => (
+            <BlurFade
+              key={exp.company}
+              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+            >
+              <ResumeCard
+                href={exp.href}
+                logoUrl={exp.logoUrl}
+                subtitle={exp.subtitle}
+                altText={exp.company}
+                title={exp.company}
+                period={`${exp.start} - ${exp.end}`}
+                description={exp.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
 
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
