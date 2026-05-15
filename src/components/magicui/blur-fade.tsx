@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
+
 interface BlurFadeProps {
   children: React.ReactNode;
   className?: string;
@@ -14,7 +15,7 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: `${number}px` | `${number}%`;
   blur?: string;
 }
 const BlurFade = ({

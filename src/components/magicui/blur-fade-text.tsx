@@ -30,7 +30,7 @@ const BlurFadeText = ({
     hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
     visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },
   };
-  const combinedVariants = variant || defaultVariants;
+  const combinedVariants: Variants = variant ?? defaultVariants;
   const characters = useMemo(() => Array.from(text), [text]);
 
   if (animateByCharacter) {
@@ -45,7 +45,8 @@ const BlurFadeText = ({
               exit="hidden"
               variants={combinedVariants}
               transition={{
-                yoyo: Infinity,
+                repeat: Infinity,
+                repeatType: "reverse",
                 delay: delay + i * characterDelay,
                 ease: "easeOut",
               }}
@@ -69,7 +70,8 @@ const BlurFadeText = ({
           exit="hidden"
           variants={combinedVariants}
           transition={{
-            yoyo: Infinity,
+            repeat: Infinity,
+            repeatType: "reverse",
             delay,
             ease: "easeOut",
           }}
